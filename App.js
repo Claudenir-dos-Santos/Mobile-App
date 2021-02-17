@@ -6,7 +6,7 @@ const App = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8080/TrabalhoFinalBase/APIServlet')
+    fetch('http://192.168.0.5:8080/TrabalhoFinalBase/APIServlet')
       .then((response) => response.json())
       .then((json) => setData(json))
       .catch((error) => console.error(error))
