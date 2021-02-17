@@ -16,6 +16,7 @@ const App = () => {
   return (
       //renderiza os dados na forma de lista
     <View style={{ flex: 1, padding: 24 }}>
+      <Text>Olá Mundo!!</Text>
       {isLoading ? <ActivityIndicator/> : (
         <FlatList
           data={data}
